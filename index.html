@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research Group Code Showcase</title>
+<style>
+  body { font-family: Arial, sans-serif; line-height: 1.6; }
+  .container { width: 80%; margin: auto; overflow: hidden; }
+  header { background: #333; color: #fff; padding: 20px; text-align: center; }
+  section { margin: 20px 0; }
+  .code-block { background-color: #f4f4f4; border-left: 6px solid #333; margin: 10px 0; padding: 10px; }
+  pre { white-space: pre-wrap; word-wrap: break-word; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Our Research Group Code Showcase</h1>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>Algorithm Example</h2>
+      <div class="code-block">
+        <pre>
+// Fibonacci Series using Recursion
+#include &lt;stdio.h&gt;
+int fib(int n)
+{
+   if (n <= 1)
+       return n;
+   return fib(n-1) + fib(n-2);
+}
+
+int main ()
+{
+  int n = 9;
+  printf("%d", fib(n));
+  getchar();
+  return 0;
+}
+        </pre>
+      </div>
+    </section>
+
+    <section>
+      <h2>Data Analysis Script</h2>
+      <div class="code-block">
+        <pre>
+# Python code for data analysis
+import pandas as pd
+
+# Load the dataset
+data = pd.read_csv('data.csv')
+
+# Perform the analysis
+mean_value = data['column_name'].mean()
+
+print(f'Mean Value: {mean_value}')
+        </pre>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>Research Group Name - &copy; 2023</p>
+  </footer>
+</body>
+</html>
