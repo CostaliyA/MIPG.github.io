@@ -3,62 +3,37 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Research Group Code Showcase</title>
+<title>Research Group Homepage</title>
 <style>
   body { font-family: Arial, sans-serif; line-height: 1.6; }
   .container { width: 80%; margin: auto; overflow: hidden; }
   header { background: #333; color: #fff; padding: 20px; text-align: center; }
-  section { margin: 20px 0; }
-  .code-block { background-color: #f4f4f4; border-left: 6px solid #333; margin: 10px 0; padding: 10px; }
-  pre { white-space: pre-wrap; word-wrap: break-word; }
+  nav { background: #444; padding: 10px 0; }
+  nav ul { padding: 0; list-style: none; text-align: center; }
+  nav ul li { display: inline; }
+  nav ul li a { color: white; text-decoration: none; padding: 15px 20px; display: inline-block; }
+  nav ul li a:hover { background: #555; }
+  footer { background: #333; color: #fff; text-align: center; padding: 10px 0; margin-top: 20px; }
 </style>
 </head>
 <body>
   <header>
-    <h1>Welcome to Our Research Group Code Showcase</h1>
+    <h1>Research Group Homepage</h1>
   </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="members.html">Members</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="achievements.html">Achievements</a></li>
+    </ul>
+  </nav>
 
   <div class="container">
     <section>
-      <h2>Algorithm Example</h2>
-      <div class="code-block">
-        <pre>
-// Fibonacci Series using Recursion
-#include &lt;stdio.h&gt;
-int fib(int n)
-{
-   if (n <= 1)
-       return n;
-   return fib(n-1) + fib(n-2);
-}
-
-int main ()
-{
-  int n = 9;
-  printf("%d", fib(n));
-  getchar();
-  return 0;
-}
-        </pre>
-      </div>
-    </section>
-
-    <section>
-      <h2>Data Analysis Script</h2>
-      <div class="code-block">
-        <pre>
-# Python code for data analysis
-import pandas as pd
-
-# Load the dataset
-data = pd.read_csv('data.csv')
-
-# Perform the analysis
-mean_value = data['column_name'].mean()
-
-print(f'Mean Value: {mean_value}')
-        </pre>
-      </div>
+      <h2>Welcome</h2>
+      <p>Welcome to our research group's website. Here you can find information about our team, latest news, and our achievements.</p>
     </section>
   </div>
 
